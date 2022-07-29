@@ -15,9 +15,11 @@
     justify-content: center;
     flex-direction: column;
     height: 25vh;
+    display: flex;
+
 }
 header {
-    font-size: 35px ;
+    font-size: 20px ;
     padding: 40px;
     text-align: center;
     background-image: url(https://img.wallpapersafari.com/desktop/1600/900/68/5/MCT3km.jpg);
@@ -33,7 +35,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
   }
 h1 {
     font-size: 20px;
@@ -59,11 +61,11 @@ h1 {
     border-style: solid;
     border-width: 6px;
     border-color:#0e4b5d;
-    margin: 20px;
+    margin: 5px;
     border-radius: 10%;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    flex-wrap: nowrap;
 }
 .bio {
     border-style: solid;
@@ -78,7 +80,7 @@ h1 {
 
 }
 .about-me {
-    height: 81vh;
+    height: 85vh;
     width: 200px;
     border-style: solid;
     border-width: 2px;
@@ -88,7 +90,7 @@ h1 {
     background-color: #0e4b5d;
     text-align: center;
     float: left;
-    flex-shrink: inherit;
+    flex: 4;
 }
 .btndiv{
     display: flex;
@@ -110,4 +112,118 @@ h1 {
 }
 .about-me-pic{
     max-width: 165px;
+}
+@media screen and (max-width: 650px){
+   
+    .card {
+        border-style: solid;
+        border-width: 2px;
+        padding: 5px;
+        margin: 0px;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 28vh;
+    
+    }
+    header {
+        font-size: 20px ;
+        padding: 25px;
+        text-align: center;
+        background-image: url(https://img.wallpapersafari.com/desktop/1600/900/68/5/MCT3km.jpg);
+        background-size: cover;
+        background-color: #cccccc;
+        background-repeat: no-repeat;
+        color: #cccccc;
+        height: 10vh;
+    }
+    body {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: flex-start;
+        flex-wrap:nowrap;
+      }
+    h1 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .wrap {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    .nav {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+    h4 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .btn {
+        text-size-adjust: 25px;
+        color: #0e4b5d;
+        background-color:#b7cd99;
+        border-style: solid;
+        border-width: 3px;
+        border-color:#0e4b5d;
+        margin: 2px;
+        border-radius: 5%;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        flex-wrap:nowrap;
+    }
+    .bio {
+        border-style: solid;
+        border-width: 4px;
+        padding: 5px;
+        flex-direction: column;
+        margin: 5px;
+        color:lightgrey;
+        background-color: #0e4b5d;
+        text-align: center;
+        border-color:#b7cd99 ;
+    
+    }
+    .about-me {
+        height: 86vh;
+        width: 70px;
+        border-style: solid;
+        border-width: 2px;
+        padding: 10px;
+        margin: 5px;
+        color:lightgrey;
+        background-color: #0e4b5d;
+        text-align: center;
+        flex: 0;
+    }
+    .btndiv{
+        display: flex;
+        justify-content: center;
+    }
+    .bodybtn {
+        text-size-adjust: 30px;
+        color: #0e4b5d;
+        size: 20px;
+        background-color:#b7cd99;
+        border-style: solid;
+        border-width: 6px;
+        border-color:#b7cd99;
+        margin: 10px;
+        border-radius: 10%;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+    .about-me-pic{
+        max-width: 40px;
+}
 }
